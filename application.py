@@ -55,8 +55,8 @@ def transformar_planilha(input_file, output_file):
 
 if __name__ == "__main__":
     # Defina o nome do arquivo de entrada e saída
-    arquivo_entrada = './proventos.xlsx'
-    arquivo_saida = './prov.csv'
+    arquivo_entrada = '/files_vol/proventos.xlsx'
+    arquivo_saida = '/files_vol/prov.csv'
     
     # Chame a função para realizar a transformação
     transformar_planilha(arquivo_entrada, arquivo_saida)
