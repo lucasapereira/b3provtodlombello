@@ -19,6 +19,7 @@ def transformar_planilha(input_file, output_file):
 
     df.loc[df['Tipo de Evento'].str.lower() == 'juros sobre capital próprio', 'Tipo de Evento'] = 'JSCP'
     df.loc[df['Tipo de Evento'].str.lower() == 'Reembolso - dividendo', 'Tipo de Evento'] = 'REEMBOLSO(DIV)'
+    df.loc[df['Tipo de Evento'].str.lower() == 'Reembolso', 'Tipo de Evento'] = 'REEMBOLSO(DIV)'
     df.loc[df['Tipo de Evento'].str.lower() == 'Reembolso - juros sobre capital próprio', 'Tipo de Evento'] = 'REEMBOLSO(JSCP)'    
     df.loc[df['Tipo de Evento'].str.lower() == 'rendimento', 'Tipo de Evento'] = 'RENDIMENTO'    
     df.loc[df['Tipo de Evento'].str.lower() == 'dividendo', 'Tipo de Evento'] = 'DIVIDENDO' 
